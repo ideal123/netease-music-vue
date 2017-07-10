@@ -7,5 +7,6 @@
 .player-footer {
   height: 50px;
   border-top: @border;
+  background-color: #f6f6f8;
 }
 </style>

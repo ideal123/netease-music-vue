@@ -25,30 +25,34 @@ export default {
 </script>
 
 <style lang="less">
-  @import './styles/lib.less';
-  body {
-    background-color: gray;
+@import './styles/lib.less';
+body {
+  font-size: 14px;
+  font-family: 'Arial, Helvetica, sans-serif';
+  color: #000;
+  background-color: gray;
+}
+.app {
+  width: 1022px;
+  margin: 20px auto;
+  background-color: white;
+}
+.container {
+  position: relative;
+  height: 570px;
+  padding-left: 200px;
+  .side-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    border-right: @border;
   }
-  .app {
-    width: 1022px;
-    margin: 20px auto;
-    background-color: white;
+  .page-view {
+    height: 100%;
+    background-color: #fafafa;
   }
-  .container {
-    position: relative;
-    height: 570px;
-    padding-left: 200px;
-    .side-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 200px;
-      border-right: @border;
-    }
-    .page-view {
-      height: 100%;
-    }
-  }
+}
 </style>
 
