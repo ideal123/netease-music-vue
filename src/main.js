@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'normalize.css'
+import './styles/global.less'
 
 Vue.config.productionTip = false
 
