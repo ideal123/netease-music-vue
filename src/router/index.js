@@ -9,6 +9,11 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: resolve => require(['@/pages/index'], resolve)
+    },
+    {
+      path: '/fm',
+      name: 'Fm',
+      component: resolve => require(['@/pages/fm'], resolve)
     }
   ]
 })
