@@ -44,9 +44,14 @@ export default {
   }
   .control-btn {
     position: absolute;
+    border: @border;
     border-radius: 50%;
     transition: .4s;
     cursor: pointer;
+    &:hover {
+      border-color: #fff;
+      background-color: rgba(0,0,0,.4);
+    }
   }
   .control-pause {
     right: 0;
