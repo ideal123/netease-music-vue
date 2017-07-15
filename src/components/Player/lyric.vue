@@ -1,3 +1,3 @@
 <template>
-  <div>私人FM</div>
+  <div>歌词</div>
 </template>
