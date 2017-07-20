@@ -2,17 +2,19 @@
   <div class="fm-player">
     <div class="poster-wrapper">
       <img class="poster" src="../../assets/t.jpg" alt="poster">
-      <div 
-        class="control-btn" 
+      <div
+        class="control-btn"
         :class="playing ? 'control-pause' : 'control-play'"
         @click="playing = !playing"
-      ></div>
+      >
+        <i class="fa" :class="playing ? 'fa-pause' : 'fa-play'" aria-hidden="true"></i>
+      </div>
     </div>
     <div class="control-wrapper">
-      <div class="control-btn t-icon-heart"></div>
-      <div class="control-btn t-icon-heart"></div>
-      <div class="control-btn t-icon-heart"></div>
-      <div class="control-btn t-icon-heart"></div>
+      <div class="control-btn" title="喜欢"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+      <div class="control-btn" title="垃圾桶"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+      <div class="control-btn" title="下一首"><i class="fa fa-step-forward" aria-hidden="true"></i></div>
+      <div class="control-btn" title="更多"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
     </div>
   </div>
 </template>
@@ -46,6 +48,7 @@ export default {
     position: absolute;
     border: @border;
     border-radius: 50%;
+    text-align: center;
     transition: .4s;
     cursor: pointer;
     &:hover {
@@ -58,6 +61,7 @@ export default {
     bottom: 0;
     width: 40px;
     height: 40px;
+    line-height: 40px;
     margin: 6px;
     background-color: #999;
   }
@@ -66,6 +70,7 @@ export default {
     bottom: 50%;
     width: 56px;
     height: 56px;
+    line-height: 56px;
     margin-right: -28px;
     margin-bottom: -28px;
     background-color: rgba(0,0,0,.3);
@@ -80,14 +85,16 @@ export default {
   .control-btn {
     width: 40px;
     height: 40px;
+    line-height: 40px;
+    text-align: center;
     border: @border;
     border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 20px;
     cursor: pointer;
     &:hover {
       background-color: #f5f5f7;
+    }
+    .fa {
+      font-size: 20px;
     }
   }
 }

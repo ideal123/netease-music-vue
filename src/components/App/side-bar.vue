@@ -3,23 +3,23 @@
     <div class="entry-block">
       <div class="entry-block-title">推荐</div>
       <ul class="entry-list">
-        <li><router-link to="/" class="entry-item" :class="{ active: $route.path == '/' }"><i class="t-icon t-icon-music"></i><span>发现音乐</span></router-link></li>
-        <li><router-link to="/fm" class="entry-item" :class="{ active: $route.path == '/fm' }"><i class="t-icon"></i><span>私人FM</span></router-link></li>
-        <li><router-link to="/mv" class="entry-item" :class="{ active: $route.path == '/mv' }"><i class="t-icon"></i><span>MV</span></router-link></li>
-        <li><router-link to="/friends" class="entry-item" :class="{ active: $route.path == '/friends' }"><i class="t-icon"></i><span>朋友</span></router-link></li>
+        <li><router-link to="/" class="entry-item" :class="{ active: $route.path == '/' }"><i class="fa fa-music" aria-hidden="true"></i></i><span>发现音乐</span></router-link></li>
+        <li><router-link to="/fm" class="entry-item" :class="{ active: $route.path == '/fm' }"><i class="fa fa-podcast" aria-hidden="true"></i><span>私人FM</span></router-link></li>
+        <li><router-link to="/mv" class="entry-item" :class="{ active: $route.path == '/mv' }"><i class="fa fa-youtube-play" aria-hidden="true"></i><span>MV</span></router-link></li>
+        <li><router-link to="/friends" class="entry-item" :class="{ active: $route.path == '/friends' }"><i class="fa fa-user-o" aria-hidden="true"></i><span>朋友</span></router-link></li>
       </ul>
     </div>
     <div class="entry-block">
       <div class="entry-block-title">我的音乐</div>
       <ul class="entry-list">
-        <li><router-link to="/local" class="entry-item" :class="{ active: $route.path == '/local' }"><i class="t-icon"></i><span>本地音乐</span></router-link></li>
-        <li><router-link to="/download" class="entry-item" :class="{ active: $route.path == '/download' }"><i class="t-icon"></i><span>下载管理</span></router-link></li>
+        <li><router-link to="/local" class="entry-item" :class="{ active: $route.path == '/local' }"><i class="fa fa-folder-open" aria-hidden="true"></i>本地音乐</span></router-link></li>
+        <li><router-link to="/download" class="entry-item" :class="{ active: $route.path == '/download' }"><i class="fa fa-download" aria-hidden="true"></i><span>下载管理</span></router-link></li>
       </ul>
     </div>
     <div class="entry-block">
       <div class="entry-block-title">创建的歌单</div>
       <ul class="entry-list">
-        <li><router-link to="/loves" class="entry-item" :class="{ active: $route.path == '/loves' }"><i class="t-icon t-icon-heart"></i><span>我喜欢的音乐</span></router-link></li>
+        <li><router-link to="/loves" class="entry-item" :class="{ active: $route.path == '/loves' }"><i class="fa fa-heart-o" aria-hidden="true"></i><span>我喜欢的音乐</span></router-link></li>
       </ul>
     </div>
   </div>
@@ -55,9 +55,9 @@
     color:  #000;
     background-color: #e6e7ea;
   }
-  .t-icon {
+  .fa {
     margin-right: 10px;
-    font-size: 16px;
+    // font-size: 16px;
   }
 }
 </style>
