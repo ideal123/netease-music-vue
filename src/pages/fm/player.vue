@@ -7,7 +7,7 @@
         :class="playing ? 'control-pause' : 'control-play'"
         @click="playing = !playing"
       >
-        <i class="fa" :class="playing ? 'fa-pause' : 'fa-play'" aria-hidden="true"></i>
+        <i class="iconfont" :class="playing ? 'icon-pause-o' : 'icon-play-o'"></i>
       </div>
     </div>
     <div class="control-wrapper">
@@ -54,6 +54,10 @@ export default {
     &:hover {
       border-color: #fff;
       background-color: rgba(0,0,0,.4);
+    }
+    .iconfont {
+      font-size: 20px;
+      color: white;
     }
   }
   .control-pause {
