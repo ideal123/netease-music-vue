@@ -27,8 +27,8 @@ export default {
 <style lang="less">
 @import './styles/lib.less';
 body {
-  font-size: 14px;
-  font-family: 'Microsoft YaHei, Arial, Helvetica, sans-serif';
+  font-size: 12px;
+  font-family: 'Arial';
   color: #000;
   background-color: gray;
 }

@@ -44,7 +44,7 @@ export default {
     margin: 35px 0;
     padding-left: 20px;
     .song-title {
-      font-size: 24px;
+      font-size: 22px;
       color: #333;
     }
     .song-meta {
@@ -61,6 +61,9 @@ export default {
       .stress {
         color: #4b7bc3;
       }
+    }
+    .lyric-block {
+      margin: 25px 50px 0 0;
     }
   }
 </style>
