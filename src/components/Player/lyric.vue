@@ -35,6 +35,7 @@
   color: #888;
   .lyric-item {
     line-height: 2.5;
+    cursor: text;
   }
 }
 </style>

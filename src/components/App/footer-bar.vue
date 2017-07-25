@@ -1,6 +1,19 @@
 <template>
-  <div class="player-footer">footer</div>
+  <div class="player-footer">
+    <audio-control></audio-control>
+  </div>
 </template>
+
+<script>
+import audioControl from '@/components/Player/control'
+
+export default {
+  components: {
+    audioControl
+  }
+}
+</script>
+
 
 <style lang="less" scoped>
 @import '../lib.less';

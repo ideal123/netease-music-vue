@@ -46,6 +46,7 @@ export default {
     .song-title {
       font-size: 22px;
       color: #333;
+      cursor: text;
     }
     .song-meta {
       overflow: hidden;
