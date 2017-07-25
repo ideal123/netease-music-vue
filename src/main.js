@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'normalize.css'
-import 'font-awesome/css/font-awesome.css'
 import './styles/global.less'
 
 Vue.config.productionTip = false

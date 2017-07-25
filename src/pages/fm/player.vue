@@ -11,10 +11,10 @@
       </div>
     </div>
     <div class="control-wrapper">
-      <div class="control-btn" title="喜欢"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-      <div class="control-btn" title="垃圾桶"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
-      <div class="control-btn" title="下一首"><i class="fa fa-step-forward" aria-hidden="true"></i></div>
-      <div class="control-btn" title="更多"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+      <div class="control-btn" title="喜欢"><i class="iconfont icon-heart"></i></div>
+      <div class="control-btn" title="垃圾桶"><i class="iconfont icon-delete"></i></div>
+      <div class="control-btn" title="下一首"><i class="iconfont icon-next-o"></i></div>
+      <div class="control-btn" title="更多"><i class="iconfont icon-more"></i></div>
     </div>
   </div>
 </template>
@@ -95,9 +95,10 @@ export default {
     border-radius: 50%;
     cursor: pointer;
     &:hover {
+      color: #000;
       background-color: #f5f5f7;
     }
-    .fa {
+    .iconfont {
       font-size: 20px;
     }
   }

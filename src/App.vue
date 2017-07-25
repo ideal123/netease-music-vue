@@ -28,14 +28,14 @@ export default {
 @import './styles/lib.less';
 body {
   font-size: 14px;
-  font-family: 'Arial, Helvetica, sans-serif';
+  font-family: 'Microsoft YaHei, Arial, Helvetica, sans-serif';
   color: #000;
   background-color: gray;
 }
 .app {
   width: 1022px;
   margin: 20px auto;
-  background-color: white;
+  background-color: #fafafa;
 }
 .container {
   position: relative;
@@ -51,7 +51,6 @@ body {
   }
   .page-view {
     height: 100%;
-    background-color: #fafafa;
   }
 }
 </style>
