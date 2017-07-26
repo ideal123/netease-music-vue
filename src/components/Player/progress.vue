@@ -1,14 +1,32 @@
 <template>
   <div class="progress-wrapper">
-    <div class="current-time">02:12</div>
+    <div class="current-time">{{currentTime | fmtTime}}</div>
     <div class="progress-bar">
-      <div class="progress-cur" style="width: 20%;">
+      <div class="progress-cur" :style="{ width: progress }">
         <span class="f-btn"><i></i></span>
       </div>
     </div>
-    <div class="total-time">04:12</div>
+    <div class="total-time">{{totalTime | fmtTime}}</div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['totalTime', 'currentTime'],
+  computed: {
+    progress () {
+      return this.currentTime / this.totalTime * 100 + '%'
+    }
+  },
+  filters: {
+    fmtTime (val) {
+      var min = Math.floor(val / 60)
+      var s = val % 60
+      return (min < 10 ? '0' : '') + min + ':' + (s < 10 ? '0' : '') + s
+    }
+  }
+}
+</script>
 
 <style lang="less" scoped>
 @import '../lib.less';

@@ -1,12 +1,13 @@
 <template>
   <div class="audio-control">
     <div class="control-btns">
-      <div class="control-btn control-pause"><i class="iconfont icon-pause"></i></div>
+      <div class="control-btn control-pause" @click="toggle"><i class="iconfont" :class="playing ? 'icon-pause': 'icon-play'"></i></div>
       <div class="control-btn control-next"><i class="iconfont icon-next"></i></div>
     </div>
-    <progress-bar class="progress-block"></progress-bar>
+    <progress-bar class="progress-block" :totalTime="totalTime" :currentTime="currentTime"></progress-bar>
     <volume-bar class="volume-block"></volume-bar>
     <div class="lyric-control"><span class="lyric-btn">词</span></div>
+    <audio src="/static/music.mp3" ref="player"></audio>
   </div>
 </template>
 
@@ -14,6 +15,33 @@
 import progressBar from './progress'
 import volumeBar from './volume'
 export default {
+  data () {
+    return {
+      playing: false,
+      totalTime: 0,
+      currentTime: 0
+    }
+  },
+  methods: {
+    toggle () {
+      this.playing ? this.pause() : this.play()
+      this.playing = !this.playing
+    },
+    play () {
+      this.$refs.player.play()
+    },
+    pause () {
+      this.$refs.player.pause()
+    }
+  },
+  mounted () {
+    this.$refs.player.addEventListener('play', () => {
+      this.totalTime = Math.floor(this.$refs.player.duration)
+      setInterval(() => {
+        this.currentTime = Math.floor(this.$refs.player.currentTime)
+      }, 1000)
+    })
+  },
   components: {
     progressBar,
     volumeBar
