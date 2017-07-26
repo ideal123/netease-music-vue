@@ -6,6 +6,7 @@
     </div>
     <progress-bar class="progress-block"></progress-bar>
     <volume-bar class="volume-block"></volume-bar>
+    <div class="lyric-control"><span class="lyric-btn">词</span></div>
   </div>
 </template>
 
@@ -49,13 +50,18 @@ export default {
     width: 35px;
     height: 35px;
     line-height: 35px;
-    font-size: 16px;
+    .iconfont {
+      font-size: 22px;
+    }
   }
   .control-next {
     width: 30px;
     height: 30px;
     line-height: 30px;
-    font-size: 10px;
+    .iconfont {
+      margin-left: 2px;
+      font-size: 16px;
+    }
   }
 }
 .progress-block {
@@ -63,5 +69,24 @@ export default {
 }
 .volume-block {
   margin-left: 18px;
+}
+.lyric-control {
+  width: 34px;
+  margin-left: 20px;
+  line-height: 50px;
+  font-size: 10px;
+  color: #666;
+  .lyric-btn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #919192;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #444;
+    }
+  }
 }
 </style>

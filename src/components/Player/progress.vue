@@ -18,7 +18,8 @@
   flex: 1;
   .current-time,
   .total-time {
-    color: #333;
+    // font-size: 12px;
+    color: #696969;
   }
   .progress-bar {
     display: flex;
@@ -37,29 +38,6 @@
     position: relative;
     height: 100%;
     background-color: @red;
-    }
-  .f-btn {
-    position: absolute;
-    top: -5px;
-    right: -7px;
-    width: 14px;
-    height: 14px;
-    border: @border;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    &:hover {
-      box-shadow: 0 0 5px 2px #ccc;
-    }
-    i {
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: @red;
-    }
   }
 }
 </style>

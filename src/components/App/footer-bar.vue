@@ -23,3 +23,31 @@ export default {
   background-color: #f6f6f8;
 }
 </style>
+
+<style lang="less">
+@import '../lib.less';
+.f-btn {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 5px 2px #ccc;
+  }
+  i {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: @red;
+  }
+}
+</style>
+
