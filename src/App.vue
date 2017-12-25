@@ -46,7 +46,7 @@ export default {
     border-right: @border;
   }
   .page-view {
-    overflow-y: auto;
+    overflow-y: scroll;
     height: 100%;
     margin: 0 30px;
   }
