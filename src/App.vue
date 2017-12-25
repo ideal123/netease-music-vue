@@ -24,19 +24,15 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import './styles/lib.less';
-body {
-  font-size: 12px;
-  font-family: 'Arial';
-  color: #000;
-  background-color: gray;
-}
+
 .app {
   width: 1022px;
   margin: 20px auto;
   background-color: #fafafa;
 }
+
 .container {
   position: relative;
   height: 570px;
@@ -50,7 +46,9 @@ body {
     border-right: @border;
   }
   .page-view {
+    overflow-y: auto;
     height: 100%;
+    margin: 0 30px;
   }
 }
 </style>

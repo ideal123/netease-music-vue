@@ -1,35 +1,52 @@
 @import './lib.less';
+// reset
 * {
   box-sizing: border-box;
 }
+
 div {
   cursor: default;
 }
+
 ul,ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ::-webkit-scrollbar {
   width:8px;
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #e4e4e6;
 }
+
+// 全局用
+body {
+  font-size: 12px;
+  font-family: 'SimSun', 'SimHei', 'Microsoft YaHei';
+  color: #000;
+  background-color: gray;
+}
+
 .t-icon {
   display: inline-block;
   vertical-align: middle;
   width: 1em;
   height: 1em;
 }
+
 .t-icon-music {
   background-image: url('../assets/icon/music.jpg');
 }
+
 .t-icon-heart {
   background-image: url('../assets/icon/heart.jpg');
 }
