@@ -30,6 +30,7 @@ export default {
 
 <style lang="less" scoped>
 @import '../lib.less';
+
 .progress-wrapper {
   display: flex;
   align-items: center;
@@ -46,6 +47,7 @@ export default {
     margin: 0 10px;
   }
 }
+
 .progress-bar {
   display: flex;
   flex: 1;

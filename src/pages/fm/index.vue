@@ -27,45 +27,48 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  @import '../lib.less';
-  .fm-page {
-    width: 760px;
-    margin: 0 auto;
-  }
-  .song-info {
-    display: flex;
-    .player-block {
-      flex: 1;
-      padding-right: 20px;
-    }
-  }
-  .song-detail {
+@import '../lib.less';
+
+.fm-page {
+  width: 760px;
+  margin: 0 auto;
+}
+
+.song-info {
+  display: flex;
+  .player-block {
     flex: 1;
-    margin: 35px 0;
-    padding-left: 20px;
-    .song-title {
-      font-size: 22px;
-      color: #333;
-      cursor: text;
+    padding-right: 20px;
+  }
+}
+
+.song-detail {
+  flex: 1;
+  margin: 35px 0;
+  padding-left: 20px;
+  .song-title {
+    font-size: 22px;
+    color: #333;
+    cursor: text;
+  }
+  .song-meta {
+    overflow: hidden;
+    margin-top: 16px;
+    color: #646464;
+    .song-album {
+      float: left;
+      width: 180px;
     }
-    .song-meta {
-      overflow: hidden;
-      margin-top: 16px;
-      color: #646464;
-      .song-album {
-        float: left;
-        width: 180px;
-      }
-      .song-singer {
-        float: left;
-      }
-      .stress {
-        color: #4b7bc3;
-      }
+    .song-singer {
+      float: left;
     }
-    .lyric-block {
-      margin: 25px 50px 0 0;
+    .stress {
+      color: #4b7bc3;
     }
   }
+  .lyric-block {
+    margin: 25px 50px 0 0;
+  }
+}
 </style>
 

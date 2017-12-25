@@ -11,6 +11,7 @@
 
 <style lang="less" scoped>
 @import '../lib.less';
+
 .volume {
   display: flex;
   align-items: center;
@@ -22,6 +23,7 @@
     }
   }
 }
+
 .volume-bar {
   width: 100px;
   height: 4px;

@@ -8,7 +8,12 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/find'
+    },
+    {
+      path: '/find',
       name: 'Find',
+      redirect: '/find/recommend',
       component: resolve => require(['@/pages/find/layout'], resolve),
       children: findRouters
     },

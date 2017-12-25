@@ -23,10 +23,12 @@
 
 <style lang="less" scoped>
 @import '../lib.less';
+
 .lyric-wrapper {
   height: 300px;
   border-right: @border;
 }
+
 .lyric-list {
   height: 100%;
   overflow-y: scroll;

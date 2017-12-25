@@ -52,10 +52,12 @@ export default {
 
 <style lang="less" scoped>
 @import '../lib.less';
+
 .audio-control {
   display: flex;
   height: 50px;
 }
+
 .control-btns {
   display: flex;
   align-items: center;
@@ -92,12 +94,15 @@ export default {
     }
   }
 }
+
 .progress-block {
   margin-left: 14px;
 }
+
 .volume-block {
   margin-left: 18px;
 }
+
 .lyric-control {
   width: 34px;
   margin-left: 20px;

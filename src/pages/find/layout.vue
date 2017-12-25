@@ -2,12 +2,12 @@
   <div class="page-find">
     <div class="find-menu">
       <ul class="menu-list">
-        <li><router-link to="/recommend">个性推荐</router-link></li>
-        <li><router-link to="/songlist">歌单</router-link></li>
-        <li><router-link to="/radio">主播电台</router-link></li>
-        <li><router-link to="/ranking">排行榜</router-link></li>
-        <li><router-link to="/singer">歌手</router-link></li>
-        <li><router-link to="/newest">最新音乐</router-link></li>
+        <li><router-link to="/find/recommend">个性推荐</router-link></li>
+        <li><router-link to="/find/songlist">歌单</router-link></li>
+        <li><router-link to="/find/radio">主播电台</router-link></li>
+        <li><router-link to="/find/ranking">排行榜</router-link></li>
+        <li><router-link to="/find/singer">歌手</router-link></li>
+        <li><router-link to="/find/newest">最新音乐</router-link></li>
       </ul>
     </div>
     <router-view></router-view>

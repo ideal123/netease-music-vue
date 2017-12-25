@@ -31,9 +31,11 @@ export default {
 
 <style lang="less" scoped>
 @import '../lib.less';
+
 .fm-player {
   overflow: hidden;
 }
+
 .poster-wrapper {
   float: right;
   position: relative;
@@ -80,6 +82,7 @@ export default {
     background-color: rgba(0,0,0,.3);
   }
 }
+
 .control-wrapper {
   float: right;
   display: flex;

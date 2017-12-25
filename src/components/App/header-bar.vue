@@ -6,6 +6,7 @@
 
 <style lang="less" scoped>
 @import '../lib.less';
+
 .player-header {
   display: flex;
   align-items: center;
